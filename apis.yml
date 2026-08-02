@@ -1,8 +1,26 @@
 aid: withcoverage
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/withcoverage.png
 name: Withcoverage
-description: 'Withcoverage is a company surfaced as a portfolio company of 8vc and added to the API Evangelist
-  network as a stub for enrichment. Sector: insurtech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'WithCoverage is a technology-driven risk management and commercial insurance
+  platform that aims to replace the traditional insurance broker for growing businesses.
+  It pairs a team of insurance advisors, claims specialists, and attorneys with an
+  AI-powered digital platform to analyze policies, reduce premiums, manage certificates
+  of insurance, and handle claims proactively as companies scale. Headquartered in
+  New York City and backed by venture investors including 8vc, WithCoverage operates
+  in the insurtech sector. This API Evangelist profile was created as a portfolio
+  lead and enriched by the pipeline; the company currently exposes no public developer
+  API surface (client access is through the app.withcoverage.com web application).'
 url: https://raw.githubusercontent.com/api-evangelist/withcoverage/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Insurtech
+- Insurance
+- Risk Management
+- Commercial Insurance
+- Brokerage
+- Claims
+- Fintech
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/withcoverage-domain-security.yml
 - type: Website
   url: https://withcoverage.com
+- type: Login
+  url: https://app.withcoverage.com/auth/login
+- type: TermsOfService
+  url: https://www.withcoverage.com/legal/terms
+- type: PrivacyPolicy
+  url: https://www.withcoverage.com/legal/privacy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
